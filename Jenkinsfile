@@ -27,6 +27,8 @@ pipeline {
     stage('build') {
       steps {
         echo 'deploy'
+        sh 'echo "second step"'
+        sleep 1
       }
     }
 
